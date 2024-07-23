@@ -13,7 +13,7 @@ import About from "./components/ui/About";
 import Heading from "./components/ui/Heading";
 import { CanvasRevealEffectDemo } from "./components/CanvasRevealEffectDemo";
 export default function Home() {
-  const [dark, setDark] = useState(window.localStorage.getItem('dark') === 'true' || false);
+  const [dark, setDark] = useState(true);
 
   useEffect(() => {
     if (dark) {
@@ -26,9 +26,7 @@ export default function Home() {
   }, [dark]);
 
   const toggleTheme = () => {
-    const newDarkMode = !dark;
-    setDark(newDarkMode);
-    window.localStorage.setItem('dark', JSON.stringify(newDarkMode));
+    setDark(!dark);
   };
 
 
