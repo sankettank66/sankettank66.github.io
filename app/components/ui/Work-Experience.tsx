@@ -19,7 +19,7 @@ const WorkExperience = () => {
       description: `<ul>
         <li><strong>Developed a sophisticated chatbot for the organization</strong> featuring AI capabilities, FAQ display, data feeding, image uploading, and an admin panel for user management. Implemented with <strong>React</strong>, <strong>Ant Design</strong>, <strong>Moment.js</strong>, and <strong>React Quill</strong>, and integrated with <strong>OpenAI's ChatGPT</strong>, <strong>Google Gemini</strong>, and <strong>Falcon</strong> models for enhanced functionality.</li><br/>
         <li><strong>Designed a health report analyzer</strong> allowing users to upload PDFs of blood reports. Implemented functionalities to calculate counts of <strong>Red Blood Cells</strong>, <strong>White Blood Cells</strong>, <strong>Platelets</strong>, and <strong>BMI</strong>. Integrated APIs and developed using <strong>Material UI</strong> for streamlined user experience.</li><br/>
-        <li><strong>Worked on a TypeScript and React project</strong>, focusing on API integration and implementing heartbeat data visualization using the <strong>Mantine UI</strong> library. Contributed to bug fixes and UI enhancements for the company’s <strong>Next.js</strong> website, creating new components and leveraging <strong>Tailwind CSS</strong> for responsive styling.</li><br/>
+        <li><strong>Worked on a TypeScript and React project</strong>, focusing on API integration and implementing heartbeat data visualization using the <strong>Mantine UI</strong> library.</li><br/>
         <li><strong>Enhanced the company's website</strong> by developing visually appealing components using <strong>Next.js</strong> and <strong>Tailwind CSS</strong>, optimizing for high performance.</li><br/>
       </ul>`,
     },
