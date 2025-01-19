@@ -22,7 +22,7 @@ export default function RootLayout({
             className={clsx(inter.className, 'scrollbar-thumb-rounded-full', 'scrollbar-track-rounded-full', 'scrollbar', 'scrollbar-thumb-slate-700', 'scrollbar-track-slate-300', 'h-32', 'overflow-y-scroll', 'w-full')}>
         {children}
         <Analytics/>
-        <script src="https://chatbot-ai-support.s3.us-east-2.amazonaws.com/chatbot-main.js" defer />
+{/*         <script src="https://chatbot-ai-support.s3.us-east-2.amazonaws.com/chatbot-main.js" defer /> */}
         </body>
         </html>
     );
