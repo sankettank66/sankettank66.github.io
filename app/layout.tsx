@@ -17,7 +17,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="dark scroll-smooth">
+        <html lang="en" className="scroll-smooth">
         <body
             className={clsx(inter.className, 'scrollbar-thumb-rounded-full', 'scrollbar-track-rounded-full', 'scrollbar', 'scrollbar-thumb-slate-700', 'scrollbar-track-slate-300', 'h-32', 'overflow-y-scroll', 'w-full')}>
         {children}
