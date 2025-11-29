@@ -49,19 +49,19 @@ const TechCloud = ({ externalTheme }: TechCloudProps) => {
                         <div className='bg-white dark:bg-transparent rounded-lg backdrop-blur-2xl shadow-lg p-4'>
                             <div className='grid grid-cols-2 sm:grid-cols-4 gap-4'>
                                 <CustomizedButton text='Javascript' className='my-2' />
-                                <CustomizedButton text='Java' className='my-2' />
+                                <CustomizedButton text='Python' className='my-2' />
                                 <CustomizedButton text='React' className='my-2' />
                                 <CustomizedButton text='Next' className='my-2' />
+                                <CustomizedButton text='PostgreSQL' className='my-2' />
+                                <CustomizedButton text='Docker' className='my-2' />
+                                <CustomizedButton text='SQL' className='my-2' />
                                 <CustomizedButton text='Mantine UI' className='my-2' />
                                 <CustomizedButton text='Ant Design' className='my-2' />
                                 <CustomizedButton text='Tailwind UI' className='my-2' />
                                 <CustomizedButton text='Material UI' className='my-2' />
                                 <CustomizedButton text='Node JS' className='my-2' />
                                 <CustomizedButton text='Express JS' className='my-2' />
-                                <CustomizedButton text='Docker' className='my-2' />
-                                <CustomizedButton text='SQL' className='my-2' />
                                 <CustomizedButton text='MongoDB' className='my-2' />
-                                <CustomizedButton text='Prisma' className='my-2' />
                                 <CustomizedButton text='HTML' className='my-2' />
                                 <CustomizedButton text='CSS' className='my-2' />
                             </div>
