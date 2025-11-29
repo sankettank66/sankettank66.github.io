@@ -12,7 +12,7 @@ const Projects = () => {
             <BlurFade inView className='mx-auto'>
                 <SparklesText text='Projects' sparklesCount={5} className='text-4xl text-center text-black dark:text-white' />
                 <div className='flex flex-col md:grid md:grid-cols-3'>
-                    <AnimatedPinDemo img={PORTFOLIO_IMAGE} alt={"Portfolio Image"} ProjectHeading={"Portfolio"} title={"Portfolio Link"} linkHref={"https://github.com/sankettank66/My-Portfolio"} description={"Personal Portfolio with Smooth Animation made using NextJs MagicUI Acernity UI and tailwind"} />
+                    <AnimatedPinDemo img={PORTFOLIO_IMAGE} alt={"Portfolio Image"} ProjectHeading={"Portfolio"} title={"Portfolio Link"} linkHref={"https://github.com/sankettank66/sankettank66.github.io"} description={"Personal Portfolio with Smooth Animation made using NextJs MagicUI Acernity UI and tailwind"} />
                     <AnimatedPinDemo img={FINCATALYST_IMAGE} alt={"Fincatalyst Project"} ProjectHeading={"Fincatalyst"} title={"Devfolio Link"} linkHref={"https://devfolio.co/projects/fincatalyst-e986"} description={"This app leverages CoinCap API, React, Vite, Tailwind CSS, and RoughNotion to deliver real-time cryptocurrency data with interactive visualization!"} />
                     <AnimatedPinDemo img={GITHUB_PHOTO} alt={"GITHUB USER FINDER"} ProjectHeading={"Github User Finder"} title={"Live Link"} linkHref={"https://ghuserfinder.vercel.app"} description={"Discover GitHub users, their repositories, and key details with ease. Streamline your search and explore the world of code."} />
                 </div>
