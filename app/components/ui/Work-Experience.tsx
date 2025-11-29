@@ -9,33 +9,45 @@ import SparklesText from './SparklesText';
 const WorkExperience = () => {
   const [expandedIndex, setExpandedIndex] = useState<number>(0); // State to track expanded item index
 
-  let obj = [
-    {
-      companyName: 'Lucent Innovation',
-      designation: 'MERN Stack Developer',
-      duration: 'January 2024 - Present',
-      image: img,
-      website: 'https://www.lucentinnovation.com',
-      description: `<ul>
-        <li><strong>Developed a sophisticated chatbot for the organization</strong> featuring AI capabilities, FAQ display, data feeding, image uploading, and an admin panel for user management. Implemented with <strong>React</strong>, <strong>Ant Design</strong>, <strong>Moment.js</strong>, and <strong>React Quill</strong>, and integrated with <strong>OpenAI's ChatGPT</strong>, <strong>Google Gemini</strong>, and <strong>Falcon</strong> models for enhanced functionality.</li><br/>
-        <li><strong>Designed a health report analyzer</strong> allowing users to upload PDFs of blood reports. Implemented functionalities to calculate counts of <strong>Red Blood Cells</strong>, <strong>White Blood Cells</strong>, <strong>Platelets</strong>, and <strong>BMI</strong>. Integrated APIs and developed using <strong>Material UI</strong> for streamlined user experience.</li><br/>
-        <li><strong>Worked on a TypeScript and React project</strong>, focusing on API integration and implementing heartbeat data visualization using the <strong>Mantine UI</strong> library.</li><br/>
-        <li><strong>Enhanced the company's website</strong> by developing visually appealing components using <strong>Next.js</strong> and <strong>Tailwind CSS</strong>, optimizing for high performance.</li><br/>
-      </ul>`,
-    },
-    {
-      companyName: 'WeTheDevelopers',
-      designation: 'Front End Developer Intern',
-      duration: 'August 2023 - September 2023',
-      image: img2,
-      website: 'https://www.wethedevelopers.com',
-      description: `<div>
-    <p>Developed a Project called <strong>FinCatalyst</strong> using React, integrating real-time data from CoinCap APIs.</p>
-    <p>Implemented user authentication with <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong>.</p>
-    <p>Integrated data from 50+ exchanges for accurate exchange details, using <strong>Tailwind CSS</strong> for responsive design.</p>
-  </div>`,
-    }
-  ];
+  const obj = [
+  {
+    companyName: 'Odoo India',
+    designation: 'Full Stack Developer',
+    duration: 'August 2025 – Present',
+    image: 'https://apps.odoocdn.com/web/image/loempia.module/194894/icon_image/84x84?unique=0fe8c89', // add your Odoo image
+    website: 'https://www.odoo.com',
+    description: `<ul>
+      <li>Working on core logistics modules including <strong>Inventory</strong>, <strong>MRP</strong>, <strong>Barcode</strong>, and <strong>Shopfloor</strong>, implementing scalable backend features using <strong>Odoo Python ORM</strong>, <strong>PostgreSQL</strong>, and <strong>XML</strong>-based UI components.</li><br/>
+      <li>Developing interactive and modern frontend experiences using <strong>OWL JS</strong> and <strong>JavaScript</strong>, improving workflow efficiency and enhancing usability across manufacturing and warehouse operations.</li><br/>
+    </ul>`,
+  },
+  {
+    companyName: 'Lucent Innovation',
+    designation: 'Software Engineer',
+    duration: 'January 2024 – July 2025',
+    image: img,
+    website: 'https://www.lucentinnovation.com',
+    description: `<ul>
+      <li>Led migration of legacy <strong>Shopify apps</strong> to a modern <strong>React</strong> architecture, achieving a <strong>6x improvement in LCP</strong> (12s → &lt; 2s) and significantly boosting performance, engagement, and conversion rates.</li><br/>
+      <li>Earned the <strong>"Built for Shopify"</strong> badge for multiple apps by optimizing Core Web Vitals (<strong>LCP, INP, CLS</strong>) and meeting strict Shopify Partner standards, increasing app credibility and discoverability in the Shopify App Store.</li><br/>
+      <li>Developed an <strong>AI-powered chatbot</strong> using React and Ant Design, integrating <strong>OpenAI ChatGPT</strong> and <strong>Google Gemini</strong>. Enabled real-time communication via WebSockets, reducing response time by <strong>25%</strong> and improving user satisfaction.</li><br/>
+      <li>Enhanced the company website with high-performance <strong>Next.js</strong> components, achieving a <strong>30%–35%</strong> increase in speed, responsiveness, and overall UX quality.</li><br/>
+    </ul>`,
+  },
+  {
+    companyName: 'WeTheDevelopers',
+    designation: 'Front End Developer Intern',
+    duration: 'August 2023 – September 2023',
+    image: img2,
+    website: 'https://www.wethedevelopers.com',
+    description: `<div>
+      <p>Built <strong>FinCatalyst</strong> using React with real-time data from CoinCap APIs.</p>
+      <p>Implemented authentication with <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong>.</p>
+      <p>Integrated data from 50+ exchanges for accurate market insights, styled using <strong>Tailwind CSS</strong>.</p>
+    </div>`,
+  },
+];
+
 
   // Function to toggle expanded state of an item
   const toggleExpand = (index: number) => {
