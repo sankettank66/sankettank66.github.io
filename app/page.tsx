@@ -40,7 +40,7 @@ export default function Home() {
             <About />
             <WorkExperience />
             <Education />
-            <TechCloud />
+            <TechCloud externalTheme={dark ? "dark" : "light"}/>
             <Projects />
             <CanvasRevealEffectDemo theme={dark} />
             <Social />

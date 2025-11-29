@@ -4,7 +4,11 @@ import BlurFade from './Blur-fade';
 import SparklesText from './SparklesText';
 import IconCloud from './tech-cloud';
 
-const TechCloud = () => {
+type TechCloudProps = {
+  externalTheme?: "light" | "dark" | string;
+};
+
+const TechCloud = ({ externalTheme }: TechCloudProps) => {
     const iconSlugs = [
     'javascript',
     'typescript',
@@ -39,7 +43,7 @@ const TechCloud = () => {
                     <SparklesText text='Skills' sparklesCount={5} className='pb-6 text-4xl text-center text-black dark:text-white' />
                     <div className='flex flex-col gap-8 px-4'>
                         <div className="relative flex w-full h-2/4  items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-neutral-950 px-20 pb-20 pt-8 backdrop-blur-2xl shadow-lg">
-                            <IconCloud iconSlugs={iconSlugs} />
+                            <IconCloud iconSlugs={iconSlugs} externalTheme={externalTheme}/>
                             <BackgroundBeams />
                         </div>
                         <div className='bg-white dark:bg-transparent rounded-lg backdrop-blur-2xl shadow-lg p-4'>
