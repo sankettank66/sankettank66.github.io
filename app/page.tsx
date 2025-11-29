@@ -13,7 +13,7 @@ import About from "./components/ui/About";
 import Heading from "./components/ui/Heading";
 import { CanvasRevealEffectDemo } from "./components/CanvasRevealEffectDemo";
 export default function Home() {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
     if (dark) {
