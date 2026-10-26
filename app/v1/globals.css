@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --v1-paper: #ffffff;
+  --v1-ink: #000000;
+}
+
+.v1-root {
+  min-height: 100vh;
+  background: var(--v1-paper);
+  color: var(--v1-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.v1-page {
+  min-height: 100vh;
+  background: var(--v1-paper);
+  color: var(--v1-ink);
+  transition:
+    background-color 240ms ease,
+    color 240ms ease;
+}
+
+.v1-page.dark {
+  --v1-paper: #000000;
+  --v1-ink: #ffffff;
+  color-scheme: dark;
+}
+
+.archive-badge {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 80;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.25rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(12px);
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.archive-badge:hover {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.archive-badge:focus-visible {
+  outline: 2px solid #ff4d00;
+  outline-offset: 3px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v1-page {
+    transition: none;
+  }
+}

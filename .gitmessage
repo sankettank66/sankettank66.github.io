@@ -1,0 +1,31 @@
+# <type>(<scope>): <short imperative summary>
+#
+# Why:
+# Explain the problem, context, or user need behind this change.
+#
+# What changed:
+# - Summarize the important implementation details.
+# - Call out architectural, deployment, or dependency changes.
+# - Note any content or behavior that was intentionally preserved.
+#
+# Verification:
+# - List the checks actually run, including build, lint, typecheck,
+#   browser verification, and Lighthouse results where applicable.
+#
+# Refs: #
+#
+# Conventional commit types:
+# feat, fix, refactor, perf, docs, build, ci, test, chore
+#
+# Subject rules:
+# - Use imperative mood: "add", "fix", "migrate", not "added" or "adds".
+# - Keep the first line at or below 72 characters.
+# - Do not end the subject with a period.
+#
+# Body rules:
+# - Separate the subject from the body with one blank line.
+# - Wrap the body at 72 characters.
+# - Use the footer for issue references or breaking changes.
+#
+# Breaking change format:
+# BREAKING CHANGE: describe the migration or compatibility impact.

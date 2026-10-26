@@ -1,38 +1,50 @@
-# My Personal Portfolio
+# Sanket Tank - Portfolio
 
-Welcome to my personal portfolio project built with Next.js, Acernety UI, and Tailwind CSS. This portfolio showcases my skills, projects, and experiences in a sleek and responsive design.
+Personal portfolio for Sanket Tank, a full-stack engineer focused on web performance, frontend architecture, real-time systems, and developer tooling.
 
-## Features
+- `/` - Signal Ledger portfolio built with Next.js 16 and React 19.
+- `/v1/` - Noindex archive of the previous portfolio.
 
-- **Next.js**: Framework for server-rendered React applications.
-- **Acernity UI**: Modern UI components and styling.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-- **Responsive Design**: Ensures optimal viewing experience across devices.
-- **Dark Mode**: Toggleable dark mode for improved readability and aesthetics.
-- **Smooth Animations**: Enhances user interaction with fluid animations.
+## Stack
 
-## Getting Started
+- Next.js 16 App Router
+- React 19 and TypeScript
+- Bun for dependency management and scripts
+- React Three Fiber and Three.js
+- Custom CSS design system with light and dark themes
 
-To get a local copy up and running follow these simple steps:
+## Local development
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/sankettank66/My-Portfolio.git
-   cd My-Portfolio
-   ```
-2. **Install dependencies:**
-   ```bash
-   npm install
-    # or
-   yarn install
-    # or
-   pnpm install
-   ```
-3. **Run development server:**
-   ```bash
-   npm run dev
-    # or
-   yarn dev
-    # or
-   pnpm dev
-   ```
+Requires Node.js 22 or newer and Bun 1.3.
+
+```bash
+bun install
+bun run dev
+```
+
+Open `http://localhost:3000`.
+
+## Quality checks
+
+```bash
+bun run typecheck
+bun run lint
+bun run build
+```
+
+Run the production build locally with:
+
+```bash
+bun run start
+```
+
+## Deployment
+
+The site is deployed on Vercel.
+
+1. Import the repository into Vercel.
+2. Keep the framework preset as Next.js.
+3. Use `bun install` for dependencies and `bun run build` for the build.
+4. Add the production domain in the Vercel project settings.
+
+No static export step or GitHub Pages configuration is required. If the production domain changes, update the Open Graph URL in `app/(portfolio)/layout.tsx` and the site URL in `app/sitemap.ts` and `app/robots.ts`.

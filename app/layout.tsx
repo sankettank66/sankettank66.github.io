@@ -1,29 +1,62 @@
-import type {Metadata} from "next";
-import {Inter} from "next/font/google";
-import "./globals.css";
-import clsx from "clsx";
-import {Analytics} from "@vercel/analytics/react"
+import type { Metadata, Viewport } from "next";
+import "./root.css";
 
-const inter = Inter({subsets: ["latin"]});
+const siteUrl = "https://sankettank.me";
 
 export const metadata: Metadata = {
-    title: "Sanket Tank - Portfolio",
-    description: "Explore Sanket Tank's professional portfolio built with Next.js, Acernity UI, and Tailwind CSS. Discover a fully responsive interface featuring smooth animations and a sleek dark mode.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Sanket Tank — Full-stack Engineer",
+    template: "%s — Sanket Tank",
+  },
+  description:
+    "Full-stack engineer with 2.5+ years of experience building fast, legible web systems with React, Next.js, Angular, Node.js, and real-time infrastructure.",
+  applicationName: "Sanket Tank",
+  authors: [{ name: "Sanket Tank", url: siteUrl }],
+  creator: "Sanket Tank",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: siteUrl,
+    siteName: "Sanket Tank",
+    title: "Sanket Tank — Full-stack Engineer",
+    description:
+      "Full-stack engineer building fast, legible web systems. React, Next.js, Angular, Node.js, real-time infrastructure, and developer-community talks.",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Sanket Tank — Full-stack Engineer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sanket Tank — Full-stack Engineer",
+    description: "Fast, legible web systems, thoughtful interfaces, and developer-community talks.",
+    images: ["/og.png"],
+    creator: "@sankettank6685",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f4f4ef" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b0d0a" },
+  ],
 };
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
+  children,
+}: Readonly<{
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en" className="scroll-smooth">
-        <body
-            className={clsx(inter.className, 'scrollbar-thumb-rounded-full', 'scrollbar-track-rounded-full', 'scrollbar', 'scrollbar-thumb-slate-700', 'scrollbar-track-slate-300', 'h-32', 'overflow-y-scroll', 'w-full')}>
-        {children}
-        <Analytics/>
-{/*         <script src="https://chatbot-ai-support.s3.us-east-2.amazonaws.com/chatbot-main.js" defer /> */}
-        </body>
-        </html>
-    );
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body>{children}</body>
+    </html>
+  );
 }

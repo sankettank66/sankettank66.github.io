@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sanket Tank">
+  <rect width="64" height="64" rx="10" fill="#11130f"/>
+  <path d="M14 43h36M14 33h27M14 23h16" stroke="#ff4d00" stroke-width="6" stroke-linecap="square"/>
+</svg>
