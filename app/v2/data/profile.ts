@@ -27,8 +27,8 @@ export const profile = {
 
 export const navItems: NavItem[] = [
   { label: "About", href: "#about", index: "02" },
-  { label: "Speaking", href: "#speaking", index: "03" },
-  { label: "Experience", href: "#experience", index: "04" },
+  { label: "Experience", href: "#experience", index: "03" },
+  { label: "Speaking", href: "#speaking", index: "04" },
   { label: "Work", href: "#work", index: "05" },
   { label: "Systems", href: "#systems", index: "06" },
   { label: "Contact", href: "#contact", index: "07" },

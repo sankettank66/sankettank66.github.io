@@ -6,7 +6,7 @@ export function Speaking() {
     <section id="speaking" className="section" aria-labelledby="speaking-title">
       <SectionHeading
         id="speaking-title"
-        index="03"
+        index="04"
         title="Speaking"
         note="Workshops and talks on agentic tooling, MCP, and the performance of the web."
       />
@@ -48,14 +48,23 @@ export function Speaking() {
         <div>
           <p className="eyebrow">Community</p>
           {community.map((item) => (
-            <div className="community__item" key={item.event}>
+            <div className="community__item" key={`${item.event}-${item.dateTime}`}>
               <div>
-                <h3>{item.event}</h3>
+                <h3>
+                  {item.href ? (
+                    <a href={item.href} target="_blank" rel="noreferrer">
+                      {item.event}
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                  ) : (
+                    item.event
+                  )}
+                </h3>
                 <p>{item.role}</p>
               </div>
               <div className="community__meta">
-                <span>{item.date}</span>
-                <span>{item.location}</span>
+                <time dateTime={item.dateTime}>{item.date}</time>
+                {item.location ? <span>{item.location}</span> : null}
               </div>
             </div>
           ))}

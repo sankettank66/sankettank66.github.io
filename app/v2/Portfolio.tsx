@@ -48,8 +48,8 @@ export default function Portfolio() {
     <>
       <Hero />
       <About />
-      <Speaking />
       <ExperienceSection />
+      <Speaking />
       <Work />
       <Systems />
       <Contact />

@@ -77,11 +77,62 @@ export const talks: Talk[] = [
   },
 ];
 
-export const community = [
+export type CommunityEntry = {
+  event: string;
+  role: string;
+  date: string;
+  dateTime: string;
+  location?: string;
+  href?: string;
+};
+
+export const community: CommunityEntry[] = [
   {
     event: "Open Source Day 2025",
     role: "Social Media Team · Volunteer",
     date: "05 Oct 2025",
+    dateTime: "2025-10-05",
     location: "Silver Oak University, Ahmedabad",
+    href: "https://osd.opensourceweekend.org/2025/",
   },
-];
+  {
+    event: "Cloud Community Days 2025",
+    role: "Social Media Team Member",
+    date: "05 Jul 2025",
+    dateTime: "2025-07-05",
+    location: "Town Hall, Gandhinagar",
+    href: "https://gdg.community.dev/events/details/google-gdg-cloud-gandhinagar-presents-google-cloud-community-day-gandhinagar-2025/",
+  },
+  {
+    event: "Autonomous Hacks 26",
+    role: "Hackathon Crew Member",
+    date: "10 Jan 2026",
+    dateTime: "2026-01-10",
+    location: "Silver Oak University, Ahmedabad",
+    href: "https://gdg.community.dev/events/details/google-gdg-gandhinagar-presents-autonomoushacks-26-offline-finale/cohost-gdg-on-campus-silver-oak-university-ahmedabad-india/",
+  },
+  {
+    event: "Hack This Fall Community 2025",
+    role: "Hackathon Mentor",
+    date: "09 Nov 2025",
+    dateTime: "2025-11-09",
+    location: "MobileFirst Applications, Ahmedabad",
+    href: "https://luma.com/hackthisfall-events?period=past&e=evt-3ZhfTAGQypQKc5r",
+  },
+  {
+    event: "DevFest 2025",
+    role: "Social Media Team Member",
+    date: "02 Nov 2025",
+    dateTime: "2025-11-02",
+    location: "Narayani Heights, Gandhinagar",
+    href: "https://gdg.community.dev/events/details/google-gdg-gandhinagar-presents-devfest-gandhinagar-1/cohost-gdg-gandhinagar/",
+  },
+  {
+    event: "DevFest 2026",
+    role: "AV Team · Audio Visual & Sponsorship",
+    date: "01 Nov 2026",
+    dateTime: "2026-11-01",
+    location: "Helipad Exhibition Center, Gandhinagar",
+    href: "https://gdg.community.dev/events/details/google-gdg-gandhinagar-presents-devfest-gandhinagar-2026/cohost-gdg-gandhinagar/",
+  },
+].sort((a, b) => b.dateTime.localeCompare(a.dateTime));

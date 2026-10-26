@@ -7,7 +7,7 @@ export function ExperienceSection() {
     <section id="experience" className="section" aria-labelledby="experience-title">
       <SectionHeading
         id="experience-title"
-        index="04"
+        index="03"
         title="Experience"
         note="A short record of teams, systems, and the work that changed their trajectory."
       />
